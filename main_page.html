@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="main_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section class="top-container">
+        <nav class="nav">
+          <ul>
+            <li class="widen-on-hover"><a href="#home">Home</a></li>
+            <li class="widen-on-hover"><a href="#about-us">About us</a></li>
+            <li class="widen-on-hover"><a href="#menu">Menu</a></li>
+            <li class="widen-on-hover"><a href="#products">Products</a></li>
+            <li class="widen-on-hover"><a href="#review">Review</a></li>
+            <li class="widen-on-hover"><a href="#contact">Contact</a></li>
+            <li class="widen-on-hover"><a href="#blogs">Blogs</a></li>
+          </ul>
+        </nav>
+        <div>
+          <search class="search">
+            <input type="text" placeholder="Search..." id="search" />
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </search>
+          <!-- Open button -->
+          <button class="fas fa-shopping-cart cart" id="open-cart-btn" style="width:30px"></button>
+        </div>
+        
+        <!-- Backdrop -->
+        <div class="backdrop"></div>
+
+        <!-- Side Cart -->
+        <div class="side-cart" id="side-cart">
+          <div class="cart-content">
+          <div class="cart-header">
+            <i class="fas fa-shopping-cart cart"></i>
+            <div class="header-title">
+              <h2>Your Cart</h2>
+              <span id="items-num">0</span>
+            </div>
+            <span id="close-btn">&times;</span>
+          </div>
+            <div class="cart-items">
+              <!-- Item1 -->
+              <!-- <div class="cart-item">
+                <div class="remove-item">
+                  <span>&times;</span>
+                </div>
+                <div class="item-img">
+                  <img src="menu.jpg" alt="Latte" />
+                </div>
+                <div class="item-details">
+                  <p>Coffee Latte</p>
+                  <strong>$15.99</strong>
+                  <div class="qty">
+                    <span>-</span>
+                    <strong>1</strong>
+                    <span>+</span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="cart-actions">
+              <div class="subtotal">
+                <p>SUBTOTAL:</p>
+                <p>$<span id="subtotal-price">0.00</span></p>
+              </div>
+              <button>View Cart</button>
+              <button>Checkout</button>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </section>
+      <section id="home">
+        <h1>
+          Fresh coffee<br />
+          in the morning
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          soluta possimus dicta aliquid suscipit! Cupiditate suscipit
+          perspiciatis eligendi laudantium hic labore laborum qui rem. Non et
+          quis dignissimos quidem! Sequi.
+        </p>
+        <button class="trans-to-right">
+          <a  href="#products">Get it Now</a>
+        </button>
+      </section>
+    </header>
+    <section id="about-us">
+      <div class="about">
+        <h2>About us</h2>
+        <div class="content"></div>
+        <img
+          class="left-image"
+          src="images/about.jpg"
+          alt="What makes our coffee special?"
+        />
+        <div class="center-text">
+          <h3>What makes our coffee special?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            assumenda asperiores, exercitationem quisquam vero minus qui iste!
+            Dolor nulla itaque quam tenetur, ex ducimus!
+          </p>
+          <p>
+            nam dignissimos ipsum labore totam. Quasi, quod ipsum reprehenderit
+            praesentium autem dolore eligendi saepe nostrum inventore voluptates
+            corporis at accusamus. Officia sapiente obcaecati aliquam sequi
+            eveniet, atque reiciendis, temporibus corrupti maxime doloribus ex
+            fugit eos.
+          </p>
+        </div>
+        <button class="right-text trans-to-right">Learn More</button>
+      </div>
+      <div class="clear"></div>
+    </section>
+    <section id="menu" class="menu">
+      <h2>Our <span>menu</span></h2>
+      <!-- <div class="box-container"> -->
+        <!-- <div class="box">
+          <img src="menu.jpg" alt="Latte" />
+          <h3>Tasty and healthy</h3>
+          <div class="price">&dollar;15.99<span>&dollar;20.99</span></div>
+          <button class="btn">Add to cart</button>
+        </div> -->
+        <!-- <div class="box">
+          <img src="menu.jpg" alt="Latte" />
+          <h3 class="overlay-text">Tasty and healthy</h3>
+          <div class="price overlay-text">
+            &dollar;15.99<span>&dollar;20.99</span>
+          </div>
+          <button class="btn">Add to cart</button>
+        </div> -->
+        <!-- <div class="box">
+          <img src="menu.jpg" alt="Latte" />
+          <h3>Tasty and healthy</h3>
+          <div class="price">&dollar;15.99<span>&dollar;20.99</span></div>
+          <button class="btn">Add to cart</button>
+        </div> -->
+        <!-- <div class="box">
+          <img src="menu.jpg" alt="Latte" />
+          <h3>Tasty and healthy</h3>
+          <div class="price">&dollar;15.99<span>&dollar;20.99</span></div>
+          <button class="btn">Add to cart</button>
+        </div> -->
+        <!-- <div class="box">
+          <img src="menu.jpg" alt="Latte" />
+          <h3>Tasty and healthy</h3>
+          <div class="price">&dollar;15.99<span>&dollar;20.99</span></div>
+          <button class="btn">Add to cart</button>
+        </div> -->
+        <!-- <div class="box">
+          <img src="menu.jpg" alt="Latte" />
+          <h3>Tasty and healthy</h3>
+          <div class="price">&dollar;15.99<span>&dollar;20.99</span></div>
+          <button class="btn">Add to cart</button>
+        </div> -->
+      <!-- </div> -->
+    </section>
+    <section class="products" id="products">
+      <h2>Latest <span>products</span></h2>
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-solid fa-share-nodes"></a>
+            <a href="#" class="fa-solid fa-eye"></a>
+          </div>
+          <div class="image-p">
+            <img src="pro.jpg" alt="Coffee beans" />
+          </div>
+          <div class="content-p">
+            <h3>Fresh coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&dollar;15.99 <span>&dollar;20.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-solid fa-share-nodes"></a>
+            <a href="#" class="fa-solid fa-eye"></a>
+          </div>
+          <div class="image-p">
+            <img src="pro.jpg" alt="Coffee beans" />
+          </div>
+          <div class="content-p">
+            <h3>Fresh coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&dollar;15.99 <span>&dollar;20.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-solid fa-share-nodes"></a>
+            <a href="#" class="fa-solid fa-eye"></a>
+          </div>
+          <div class="image-p">
+            <img src="pro.jpg" alt="Coffee beans" />
+          </div>
+          <div class="content-p">
+            <h3>Fresh coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&dollar;15.99<span>&dollar;20.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-solid fa-share-nodes"></a>
+            <a href="#" class="fa-solid fa-eye"></a>
+          </div>
+          <div class="image-p">
+            <img src="pro.jpg" alt="Coffee beans" />
+          </div>
+          <div class="content-p">
+            <h3>Fresh coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&dollar;15.99 <span>&dollar;20.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-solid fa-share-nodes"></a>
+            <a href="#" class="fa-solid fa-eye"></a>
+          </div>
+          <div class="image-p">
+            <img src="pro.jpg" alt="Coffee beans" />
+          </div>
+          <div class="content-p">
+            <h3>Fresh coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&dollar;15.99<span>&dollar;20.99</span></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-solid fa-share-nodes"></a>
+            <a href="#" class="fa-solid fa-eye"></a>
+          </div>
+          <div class="image-p">
+            <img src="pro.jpg" alt="Coffee beans" />
+          </div>
+          <div class="content-p">
+            <h3>Fresh coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">&dollar;15.99<span>&dollar;20.99</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review" id="review">
+      <h2>Customer's <span>review</span></h2>
+      <div class="box-container">
+        <div class="box">
+          <i class="fa-regular fa-comment"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            debitis nesciunt excepturi quae obcaecati magni ex in praesentium
+            ducimus sunt?
+          </p>
+          <img src="images/pro.jpg" alt="Coffee beans" class="quote" id="com" />
+          <h3>Jhon Deo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fa-regular fa-comment"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            debitis nesciunt excepturi quae obcaecati magni ex in praesentium
+            ducimus sunt?
+          </p>
+          <img src="images/pro.jpg" alt="Coffee beans" class="quote" id="com" />
+          <h3>Jhon Deo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <i class="fa-regular fa-comment"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            debitis nesciunt excepturi quae obcaecati magni ex in praesentium
+            ducimus sunt?
+          </p>
+          <img src="images/pro.jpg" alt="Coffee beans" class="quote" id="com" />
+          <h3>Jhon Deo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2><span>Contact</span> us</h2>
+      <div class="row">
+        <iframe
+          class="map left-image"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317716.60648832726!2d-0.4312474072555601!3d51.528607007953084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9!5e0!3m2!1suk!2suk!4v1707732805171!5m2!1suk!2suk"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form action="" class="center-text">
+          <h3>Get in touch</h3>
+          <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="name" />
+          </div>
+          <div class="inputBox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="name" />
+          </div>
+          <div class="inputBox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="name" />
+          </div>
+          <input class="btn" type="submit" value="Contact now" />
+        </form>
+      </div>
+    </section>
+    <div class="clear"></div>
+    <section class="blogs" id="blogs">
+      <h2>Our <span>blogs</span></h2>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/pro.jpg" alt="Coffee beans" />
+          <h3>Tasty and Refreshing coffee</h3>
+          <h4>By Admin 1st may, 2024</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem a asperiores autem et aut animi nobis ducimus aperiam
+            totam beatae? Laudantium quia fuga ab repellendus quasi, neque
+            blanditiis modi. Facere.
+          </p>
+          <button class="read-more">Read more</button>
+        </div>
+        <div class="box">
+          <img src="images/pro.jpg" alt="Coffee beans" />
+          <h3>Tasty and Refreshing coffee</h3>
+          <h4>By Admin 1st may, 2024</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem a asperiores autem et aut animi nobis ducimus aperiam
+            totam beatae? Laudantium quia fuga ab repellendus quasi, neque
+            blanditiis modi. Facere.
+          </p>
+          <button class="read-more">Read more</button>
+        </div>
+        <div class="box">
+          <img src="images/pro.jpg" alt="Coffee beans" />
+          <h3>Tasty and Refreshing coffee</h3>
+          <h4>By Admin 1st may, 2024</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem a asperiores autem et aut animi nobis ducimus aperiam
+            totam beatae? Laudantium quia fuga ab repellendus quasi, neque
+            blanditiis modi. Facere.
+          </p>
+          <button class="read-more">Read more</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <button class="btn"><a  href="#home">Home</a></button>
+        <button class="btn"><a  href="#about-us">About us</a></button>
+        <button class="btn"><a  href="#menu">Menu</a></button>
+        <button class="btn"><a  href="#products">Products</a></button>
+        <button class="btn"><a  href="#review">Review</a></button>
+        <button class="btn"><a  href="#contact">Contact</a></button>
+        <button class="btn"><a  href="#blogs">Blogs</a></button>
+      </nav>
+      <div class="contact-me">
+        <h3>
+          Made by Yelyzaveta Kravchenko,<br />
+          Software Developer
+        </h3>
+        <h4>Contact me</h4>
+        <h4>LinkedIn:</h4>
+        <h4>Email:</h4>
+      </div>
+    </footer>
+  </body>
+</html>
